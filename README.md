@@ -14,13 +14,13 @@ It is designed for use in scripts, command pipelines, and automation.
 
 ## From release
 
-Download latest Clipcat version to [latest release page](https://github.com/Hoang-Long2012/Clipcat/release/latest), extract and enjoy.
+Download the latest release from the [Releases page](https://github.com/Hoang-Long2012/Clipcat/releases/latest), extract it, and run clipcat.exe.
 
 ### From source
 
 ```
 git clone https://github.com/Hoang-Long2012/Clipcat.git
-cd Clipcat
+cd Clipcat\src
 python clipcat.py
 ```
 
