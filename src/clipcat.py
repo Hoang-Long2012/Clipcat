@@ -8,6 +8,7 @@ User32.OpenClipboard.argtypes = [ctypes.c_void_p]
 User32.OpenClipboard.restype = ctypes.c_bool
 User32.GetClipboardData.argtypes = [ctypes.c_uint]
 User32.GetClipboardData.restype = ctypes.c_void_p
+User32.CloseClipboard.restype = wintypes.BOOL
 Kernel32.GlobalLock.argtypes = [ctypes.c_void_p]
 Kernel32.GlobalLock.restype = ctypes.c_void_p
 Kernel32.GlobalUnlock.argtypes = [ctypes.c_void_p]
