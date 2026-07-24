@@ -45,7 +45,7 @@ def printClipboard():
 def parseArgs():
 	Parser = argparse.ArgumentParser(prog="Clipcat", description="Print your clipboard content to the standard output.", allow_abbrev=False)
 	Parser.add_argument("-v", "--version", action="version", version="%(prog)s version 1.0")
-	return Parser.parse_args()
+	Parser.parse_args()
 def main():
 	parseArgs()
 	sys.exit(printClipboard())
