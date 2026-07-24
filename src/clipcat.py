@@ -8,7 +8,7 @@ User32.OpenClipboard.argtypes = [ctypes.c_void_p]
 User32.OpenClipboard.restype = ctypes.c_bool
 User32.GetClipboardData.argtypes = [ctypes.c_uint]
 User32.GetClipboardData.restype = ctypes.c_void_p
-User32.CloseClipboard.restype = wintypes.BOOL
+User32.CloseClipboard.restype = ctypes.c_bool
 Kernel32.GlobalLock.argtypes = [ctypes.c_void_p]
 Kernel32.GlobalLock.restype = ctypes.c_void_p
 Kernel32.GlobalUnlock.argtypes = [ctypes.c_void_p]
@@ -44,7 +44,7 @@ def printClipboard():
 	return 0
 def parseArgs():
 	Parser = argparse.ArgumentParser(prog="Clipcat", description="Print your clipboard content to the standard output.", allow_abbrev=False)
-	Parser.add_argument("-v", "--version", action="version", version="Clipcat version 1.0")
+	Parser.add_argument("-v", "--version", action="version", version="%(prog)s version 1.0")
 	return Parser.parse_args()
 def main():
 	parseArgs()
